@@ -50,6 +50,8 @@ nav a {
   text-decoration: none;
   border-radius: 4px;
   transition: background 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .btn:hover {
@@ -85,6 +87,35 @@ nav a {
 .product-card h3 {
   font-size: 18px;
   margin-bottom: 10px;
+}
+
+.sizes {
+  margin: 10px 0;
+}
+
+.sizes span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.sizes button {
+  background-color: gold;
+  color: #222;
+  border: none;
+  padding: 6px 12px;
+  margin: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.sizes button:hover {
+  transform: scale(1.05);
+}
+
+.sizes button.selected {
+  border: 2px solid #222;
 }
 
 footer {
