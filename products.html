@@ -5,19 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ALTUURA - Products</title>
   <link rel="stylesheet" href="styles.css">
-  <script>
-    function selectSize(productId, productName, size) {
-      let orderBtn = document.getElementById("order-" + productId);
-      let phone = "393791003403";
-      let msg = "Hi ALTUURA, I’m interested in the " + productName + " (Size: " + size + ").";
-      orderBtn.href = "https://wa.me/" + phone + "?text=" + encodeURIComponent(msg);
-
-      // highlight selected size
-      let buttons = document.querySelectorAll("#sizes-" + productId + " button");
-      buttons.forEach(btn => btn.classList.remove("selected"));
-      document.getElementById("size-" + productId + "-" + size).classList.add("selected");
-    }
-  </script>
 </head>
 <body>
   <header>
@@ -33,52 +20,24 @@
     <section class="products">
       <h2>Our Collection</h2>
       <div class="product-grid">
-        
         <div class="product-card">
-          <img src="assets/product1.jpg" alt="Elegant Pleated Dress">
+          <img src="assets/product1.jpg" alt="Product 1">
           <h3>Elegant Pleated Dress</h3>
           <p>Blush champagne midi dress with asymmetrical pleats.</p>
-          <div class="sizes" id="sizes-1">
-            <span>Sizes:</span>
-            <button id="size-1-S" onclick="selectSize(1, 'Elegant Pleated Dress', 'S')">S</button>
-            <button id="size-1-M" onclick="selectSize(1, 'Elegant Pleated Dress', 'M')">M</button>
-            <button id="size-1-L" onclick="selectSize(1, 'Elegant Pleated Dress', 'L')">L</button>
-            <button id="size-1-XL" onclick="selectSize(1, 'Elegant Pleated Dress', 'XL')">XL</button>
-            <button id="size-1-Plus" onclick="selectSize(1, 'Elegant Pleated Dress', 'Plus')">Plus</button>
-          </div>
-          <a id="order-1" href="https://wa.me/393791003403" class="btn">Order Now</a>
+          <a href="https://wa.me/393791003403?text=Hi%20ALTUURA,%20I’m%20interested%20in%20the%20Elegant%20Pleated%20Dress." class="btn">Order Now</a>
         </div>
-
         <div class="product-card">
-          <img src="assets/product2.jpg" alt="Chic Evening Gown">
+          <img src="assets/product2.jpg" alt="Product 2">
           <h3>Chic Evening Gown</h3>
           <p>Luxury deep green gown with bustier silhouette.</p>
-          <div class="sizes" id="sizes-2">
-            <span>Sizes:</span>
-            <button id="size-2-S" onclick="selectSize(2, 'Chic Evening Gown', 'S')">S</button>
-            <button id="size-2-M" onclick="selectSize(2, 'Chic Evening Gown', 'M')">M</button>
-            <button id="size-2-L" onclick="selectSize(2, 'Chic Evening Gown', 'L')">L</button>
-            <button id="size-2-XL" onclick="selectSize(2, 'Chic Evening Gown', 'XL')">XL</button>
-            <button id="size-2-Plus" onclick="selectSize(2, 'Chic Evening Gown', 'Plus')">Plus</button>
-          </div>
-          <a id="order-2" href="https://wa.me/393791003403" class="btn">Order Now</a>
+          <a href="https://wa.me/393791003403?text=Hi%20ALTUURA,%20I’m%20interested%20in%20the%20Chic%20Evening%20Gown." class="btn">Order Now</a>
         </div>
-
         <div class="product-card">
-          <img src="assets/product3.jpg" alt="Royal Blue Statement Dress">
+          <img src="assets/product3.jpg" alt="Product 3">
           <h3>Royal Blue Statement Dress</h3>
           <p>Modern, powerful, and sophisticated ready-to-wear.</p>
-          <div class="sizes" id="sizes-3">
-            <span>Sizes:</span>
-            <button id="size-3-S" onclick="selectSize(3, 'Royal Blue Statement Dress', 'S')">S</button>
-            <button id="size-3-M" onclick="selectSize(3, 'Royal Blue Statement Dress', 'M')">M</button>
-            <button id="size-3-L" onclick="selectSize(3, 'Royal Blue Statement Dress', 'L')">L</button>
-            <button id="size-3-XL" onclick="selectSize(3, 'Royal Blue Statement Dress', 'XL')">XL</button>
-            <button id="size-3-Plus" onclick="selectSize(3, 'Royal Blue Statement Dress', 'Plus')">Plus</button>
-          </div>
-          <a id="order-3" href="https://wa.me/393791003403" class="btn">Order Now</a>
+          <a href="https://wa.me/393791003403?text=Hi%20ALTUURA,%20I’m%20interested%20in%20the%20Royal%20Blue%20Statement%20Dress." class="btn">Order Now</a>
         </div>
-
       </div>
     </section>
   </main>
