@@ -1,0 +1,97 @@
+/* Altuura Black & Gold Header (Next.js) */
+.alt-header {
+  width: 100%;
+  padding: 15px 40px;
+  background-color: #000;
+  border-bottom: 2px solid gold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.alt-logo {
+  max-width: 160px;
+  height: auto;
+}
+
+.alt-nav {
+  display: flex;
+}
+
+.alt-link {
+  color: gold;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.alt-link:hover {
+  color: #FFD700;
+  text-shadow: 0 0 6px gold;
+}
+
+.alt-menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: gold;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero */
+.alt-hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.alt-hero h1 {
+  font-size: 48px;
+}
+
+.alt-hero p {
+  font-size: 20px;
+  color: #444;
+}
+
+/* Shop Button */
+.alt-shop-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: gold;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.alt-shop-button:hover {
+  background-color: #FFD700;
+  color: #000;
+  box-shadow: 0 0 10px gold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .alt-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 220px;
+    border-left: 2px solid gold;
+    border-bottom: 2px solid gold;
+  }
+  .alt-nav.active { display: flex; }
+  .alt-link { margin: 15px; }
+  .alt-menu-toggle { display: block; }
+}
